@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombia datos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colombia en Datos</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="navbar">
         <div class="container nav-content">
-            <h1 class="logo">🇨🇴 Portal Colombia</h1>
+        <h1 class="logo">🇨🇴 Portal Colombia</h1>
             <nav>
                 <ul class="nav-links">
-                <li><a href="index.html" class="active">Colombia en Datos</a></li>
-                <li><a href="sabores.html">Sabores de Colombia</a></li>
+                    <li><a href="index.html" class="active">Colombia en Datos</a></li>
+                    <li><a href="sabores.html">Sabores de Colombia</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main class="container">
-    <section class="page-header">
-      <h2>Colombia en Datos</h2>
-      <p>Información general, geográfica y demográfica obtenida en tiempo real.</p>
-    </section>
+        <section class="page-header">
+            <h2>Colombia en Datos</h2>
+            <p>Información general, geográfica y demográfica obtenida en tiempo real.</p>
+        </section>
 
+    <!-- Mensaje de carga -->
+    <div id="loader" class="status-message loader">Cargando información de Colombia...</div>
 
+    <!-- Mensaje de error -->
+    <div id="error-message" class="status-message error hidden"></div>
 
     <!-- Contenedor dinámico para el DOM -->
     <section id="country-container" class="country-card hidden"></section>
