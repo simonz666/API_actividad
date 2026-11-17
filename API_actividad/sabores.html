@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores de Colombia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="navbar">
@@ -17,8 +17,26 @@
             </ul>
         </nav>
         </div>
-  </header>
+    </header>
+    <main class="container">
+        <section class="page-header">
+            <h2>Sabores de Colombia</h2>
+            <p>Descubre la riqueza gastronómica de nuestras regiones.</p>
+            <div id="dishes-counter" class="counter-badge hidden"></div>
+        </section>
 
-  <script src="js/sabores.js"></script>
+    <!-- Mensaje de carga -->
+    <div id="loader" class="status-message loader">Cargando platos típicos...</div>
+
+    <!-- Mensaje de error -->
+    <div id="error-message" class="status-message error hidden"></div>
+
+        <section id="dishes-grid" class="dishes-grid hidden"></section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado con datos de <a href="https://api-colombia.com/" target="_blank" rel="noopener noreferrer">API Colombia</a></p>
+    </footer>
+    <script src="js/sabores.js"></script>
 </body>
 </html>

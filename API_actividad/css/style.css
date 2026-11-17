@@ -185,3 +185,85 @@ main {
   color: var(--text-main);
 }
 
+.counter-badge {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--blue);
+  color: #ffffff;
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.5rem;
+}
+
+.dish-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-4px);
+}
+
+.dish-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #e5e7eb;
+}
+
+.dish-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.dish-department {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.35rem;
+}
+
+.dish-title {
+  font-size: 1.25rem;
+  color: var(--blue);
+  margin-bottom: 0.6rem;
+}
+
+.dish-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Pie de página */
+.footer {
+  background-color: var(--blue);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--yellow);
+  font-weight: 600;
+}
