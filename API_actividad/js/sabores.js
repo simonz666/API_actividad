@@ -1,5 +1,8 @@
 const API_DISHES_URL = 'https://api-colombia.com/api/v1/TypicalDish';
-const FALLBACK_DISH_IMAGE = 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80';
+
+/* imagen si no se encuentra nada */
+const FALLBACK_DISH_IMAGE = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0RhOn5b34pIunyRfOcESaxFNXgReA3oDhaDzyHaZPvw&s=10';
+
 const loaderEl = document.getElementById('loader');
 const errorEl = document.getElementById('error-message');
 const counterEl = document.getElementById('dishes-counter');
